@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #102a4a;
     color: #fff;
     padding: 1em 0;
     position: fixed;
@@ -71,7 +71,7 @@ section h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #102a4a;
     color: #fff;
     text-align: center;
     padding: 1em 0;
