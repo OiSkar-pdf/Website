@@ -57,6 +57,23 @@
             <p>Get in touch with us to discuss your accounting needs.</p>
             <!-- Add a contact form or contact details here -->
         </div>
+        <div class="form-container">
+            <form action="email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer>
