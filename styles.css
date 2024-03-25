@@ -48,9 +48,9 @@ nav a:hover {
     background-image: url('your-background-image.jpg'); /* Add a relevant background image */
     background-size: cover;
     background-position: center;
-    color: #b1b1b1;
+    color: #102a4a;
     text-align: center;
-    padding: 80px 0;
+    padding: 150px 0;
     /* Animation */
     animation: fadeIn 1s ease-out;
 }
@@ -70,11 +70,11 @@ nav a:hover {
 
 .hero p {
     font-size: 1.2em;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 section {
-    padding: 80px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -187,24 +187,27 @@ button:hover {
 .services-content {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
-    text-align: left; /* Align text to the left */
 }
+
 
 .rounded-image {
-    border-radius: 8px; /* Adjust the border-radius for a slight rounding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-    max-width: 40%; /* Constrain image width to its container */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 35px;
+    flex: 0 0 auto; /* Do not grow or shrink */
+    width: 200px; /* Set a specific width */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add spacing between image and text */
 }
+
 
 .services-description {
-    flex-grow: 1;
-    max-width: 60%; /* Adjust the width of the text section */
+    flex: 1; /* Take up remaining space */
+    padding-right: 5px; /* Add spacing between description and image */
 }
 
-
+.about-us-description{
+    flex: 1; /* Take up remaining space */
+    padding-left: 5px;
+}
 
 .slide-off {
     position: relative;
@@ -224,3 +227,11 @@ button:hover {
     transform: translateX(0);
 }
 
+#about.slide-out {
+    transform: translateX(calc(100% + 20px)); /* Slide off towards the right */
+    /* Adjust the 20px value as needed to create a gap between the section and the edge */
+}
+
+#services {
+    position: relative;
+}
