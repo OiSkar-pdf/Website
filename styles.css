@@ -180,6 +180,10 @@ button {
     transition: background-color 0.3s ease;
 }
 
+h1.title{
+    text-align: center;
+}
+
 button:hover {
     background-color: #45a049;
 }
@@ -210,9 +214,10 @@ button:hover {
 }
 
 .slide-off {
-    position: relative;
-    overflow: hidden;
+    transform: relative; /* Move the section off to the left */
+    transition: relative; /* Add a transition effect */
 }
+
 
 .slide-off .container {
     position: relative;
@@ -234,4 +239,30 @@ button:hover {
 
 #services {
     position: relative;
+}
+
+#sec-news {
+    padding: 80px 0;
+    background-color: #f9f9f9; /* Example background color */
+}
+
+#sec-news .container {
+    text-align: center;
+}
+
+#sec-news h2 {
+    margin-bottom: 20px;
+}
+
+#sec-news-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+}
+
+.sec-news-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
