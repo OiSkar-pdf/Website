@@ -137,6 +137,25 @@ footer {
     body.menu-open {
         overflow: hidden;
     }
+
+    /* Adjustments for mobile view */
+    .services-content {
+        display: block;
+    }
+
+    .rounded-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .services-description,
+    .about-us-description {
+        padding: 20px;
+    }
+
+    .slide-off .container {
+        transition: none; /* Remove transition effect for mobile */
+    }
 }
 
 .form-container {
