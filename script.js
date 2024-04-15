@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const scrollAmount = Math.abs(scrollTop - lastScrollTop);
         const sectionHeight = servicesSection.getBoundingClientRect().height;
         const sectionTop = servicesSection.getBoundingClientRect().top;
-        const halfwayPoint = windowHeight / 20; //adjust for position when scroll starts higher-starts later lower-starts earlier
+        const halfwayPoint = windowHeight - 690; //adjust for position when scroll starts higher-starts later lower-starts earlier
         const scrollThreshold = sectionHeight + halfwayPoint;
-        const speedAdjust = 6.5; //adjust for speed higher-faster lower-smaller
+        const speedAdjust = 3.5; //adjust for speed higher-faster lower-smaller
 
         let newPosition = parseFloat(getComputedStyle(servicesSection).left);
 
