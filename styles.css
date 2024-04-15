@@ -140,12 +140,15 @@ footer {
 
     /* Adjustments for mobile view */
     .services-content {
-        display: block;
+        display: flex;
+        flex-direction: row; /* Stack horizontally */
+        align-items: center; /* Align items horizontally */
+        justify-content: center; /* Center items horizontally */
     }
 
     .rounded-image {
-        width: 100%;
-        margin: 0 auto;
+        width: 200px; /* Adjust image width for smaller screens */
+        margin: 0 auto; /* Center the image */
     }
 
     .services-description,
@@ -157,6 +160,7 @@ footer {
         transition: none; /* Remove transition effect for mobile */
     }
 }
+
 
 .form-container {
     background: white;
